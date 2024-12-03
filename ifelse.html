@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifelse statement</title>
+</head>
+<body>
+    <script>
+
+        1
+
+        let num =4;
+
+        if(num % 4 == 0){
+            console.log("this is even_num");  
+        }
+        else{
+            console.log("this is odd_num");   
+        }
+
+        2
+
+        let num1=6;
+        let num2=3;
+        let ope='sub';
+
+        if(ope==='add'){
+            console.log(num1+num2);
+        }
+        else  if(ope==='sub'){
+            console.log(num1-num2);    
+        }
+        else  if(ope==='multiple'){
+            console.log(num1*num2);    
+        }
+        else if(ope==='division'){
+            console.log(num1/num2);  
+        }
+
+       3
+
+       let com_num=20;
+
+       if(com_num==20){
+          console.log("equal is done");
+       }
+       else if(com_num>10){
+          console.log("greater then"); 
+       }
+
+      4
+
+     let color="red";
+
+     if(color==="red"){
+        console.log("stop the vechile"); 
+     }
+     else if(color==="yellow"){
+        console.log("ready the vechile"); 
+     }
+     else if(color==="green"){
+        console.log("go the vechile"); 
+     }
+     else {
+        console.log("invalid the output"); 
+     }
+
+    5
+
+   let shape_num=3;
+
+   if(shape_num===3){
+    console.log("triangle");
+   }
+   else if(shape_num===4){
+    console.log("quadrilateral");
+   }
+   else if(shape_num===5){
+    console.log(" Pentagon");
+   }
+   else{
+    console.log("Unknown Shape");
+   }
+
+   6
+
+   function Leap_year(){
+    let year =2020;
+    if(year % 400 == 0){
+        console.log(`${year}it is a leap year(divisible 400)`);  
+    }
+    else if(year % 100==0){
+        console.log(`${year}it is a leap year(divisible 100)`);  
+    }
+    else if(year % 4==0){
+        console.log(`${year}it is a leap year(divisible 4)`);  
+    }
+    else{
+        console.log(`${year}it is not a leap year`);  
+    }
+   }
+     Leap_year()
+ 
+     7
+
+     function discount(){
+        let amount =5500;
+        if(amount>5000){
+            console.log(`congratus you has 20% discount`); 
+        }
+        else if(amount>=2000 && amount<=5000){
+            console.log(`congratus you has 10% discount`); 
+        }
+        else if(amount<2000 && amount>=5000){
+            console.log(`no discount`); 
+        }
+        else{
+            console.log(`invalid`);  
+        }
+     }
+     discount()
+
+     8
+
+        function cal(){
+            let sal_amount=30000;
+            let time =5;
+            if(sal_amount<10000){
+                let rate_of_intrest=10;
+                let interest_amount=(sal_amount * time * rate_of_intrest)/100;
+                console.log(`val ${interest_amount} total_amount $(interest_amount + sal_amount)`);   
+            }
+            else if(sal_amount>10000 && sal_amount<30000){
+                let rate_of_intrest=7;
+                let interest_amount=(sal_amount * time * rate_of_intrest)/100;
+                console.log(`val ${interest_amount} total_amount $(interest_amount + sal_amount)`);   
+            }
+            else if(sal_amount>=30000 && sal_amount<50000){
+                let rate_of_intrest=5;
+                let interest_amount=(sal_amount * time * rate_of_intrest)/100;
+                console.log(`val ${interest_amount} total_amount $(interest_amount + sal_amount)`);   
+            }
+            else if(sal_amount<=10000){
+                let rate_of_intrest=3;
+                let interest_amount=(sal_amount * time * rate_of_intrest)/100;
+                console.log(`val ${interest_amount} total_amount $(interest_amount + sal_amount)`);   
+            }
+        }
+        cal()
+
+        9
+        function class_num(){
+            let num=0;
+            if (num>100){
+                console.log(`${num} positive and greater than 100 `);    
+            }
+            else if (num>0){
+                console.log(`${num} positive and less than or equal to 100`);    
+            }
+            else if (num===0){
+                console.log(`${num} zero`);    
+            }
+            else {
+                console.log("negative");    
+            }
+        }
+        class_num()
+
+        10
+
+        function divisible(){
+            let num=3;
+            if(num %3==0){
+                console.log(`${num}divisible by 3`);   
+            }
+            else if(num %5==0){
+                console.log(`${num}divisible by 5`);   
+            }
+            else if(num %3==0 && num %5==0){
+                console.log(`${num}divisible by both 3 and 5`);   
+            }
+            else{
+                console.log(`${num} not divisible by 3 or 5`);   
+            }
+        }
+        divisible()
+    </script>
+</body>
+</html>
